@@ -215,6 +215,3 @@ end
 % Likelihood
 figure
 plot(models.L);title('log(likehood)')
-
-% Plot model with highest likelihood
-
