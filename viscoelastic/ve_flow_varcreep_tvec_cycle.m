@@ -17,6 +17,7 @@ function [u,uc] = ve_flow_varcreep_tvec_cycle(t,tR,Nn,zco,sdot,s_rate,H,D,xobs,f
 %
 % Lucile Bruhat
 % November 2017
+% Typo found by Rumeng Guo (November 2020), now corrected.
 
 % Compute Fn (which is space dependent here)
 Fn = zeros(length(xobs),Nn,length(zco));
@@ -69,7 +70,7 @@ for k = 1:length(t)
                     Sumv = Sumv + pv;
                 end
             end
-            vi(:,k,i) = Sumv/pi/tR;
+            vi(:,k,i) = Sumv/pi;
     end
 end
 
